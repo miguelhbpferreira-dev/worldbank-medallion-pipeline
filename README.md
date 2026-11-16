@@ -84,7 +84,6 @@ worldbank-medallion-pipeline/
 │   └── worldbank_medallion_pipeline.ipynb
 └── docs/
     ├── architecture.mmd
-    ├── COMO_COLOCAR_NO_GITHUB.md
     └── images/
         ├── README.md
         ├── pipeline_architecture.png
