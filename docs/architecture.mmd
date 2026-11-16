@@ -1,0 +1,8 @@
+flowchart TD
+    A["World Bank Indicators API"] -->|"Python requests"| B["Bronze: raw JSON in HDFS"]
+    B -->|"PySpark: flatten, cast and clean"| C["Silver: tabular Parquet"]
+    C -->|"PySpark: enrich"| D["Gold: analytical Parquet"]
+    D --> E["Spark SQL: metrics and missing-value profiling"]
+    E --> F["pandas + Matplotlib: 8 saved charts"]
+    C -.-> N["Silver/Gold: written locally, then uploaded via WebHDFS"]
+    D -.-> N

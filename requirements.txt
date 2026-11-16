@@ -1,0 +1,9 @@
+# Direct notebook dependencies and a notebook interface.
+# Exact original package versions are not recorded in the notebook.
+# Match the PySpark version to the Spark/Java/Hadoop environment used to run it.
+requests
+hdfs
+pyspark[sql]
+pandas
+matplotlib
+jupyterlab
